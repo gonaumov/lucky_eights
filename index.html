@@ -24,10 +24,10 @@
 			};
 			
 			$(window).load(function () {
-				 setTimeout(function loadRunes() {
+				 setTimeout(function loadGhost() {
 					addGhost().done(function() {
 						if($.fn.randomMove.iterarionNumber < 66) {
-							setTimeout(loadRunes,10000);	
+							setTimeout(loadGhost,10000);	
 						}
 				    });
 				 }, 1000);
