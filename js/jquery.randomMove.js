@@ -30,8 +30,8 @@
             
             var container = $(settings.containerSelector);
 
-            var yPosition = randomIntFromInterval(0, (container.height() - currentElement.height()));
-            var xPosition = randomIntFromInterval(0, (container.width() - currentElement.width()));
+            var yPosition = randomIntFromInterval(0, (container.height() - currentElement.height() - 20));
+            var xPosition = randomIntFromInterval(0, (container.width() - currentElement.width() - 20));
 
             var positionAndClassContent = [
                "@keyframes " + classSelector + " {",
